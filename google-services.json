@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "119090993972",
+    "project_id": "memorykeeper-4ec36",
+    "storage_bucket": "memorykeeper-4ec36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119090993972:android:3354edc62a672958fbe361",
+        "android_client_info": {
+          "package_name": "com.anvarwouldnever3.memorykeeperclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADzna_YWFzJnQMGpojIJ9vIz28XWxfpu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

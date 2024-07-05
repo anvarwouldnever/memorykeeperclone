@@ -1,27 +1,62 @@
 {
   "expo": {
+    "scheme":"com.anvarwouldnever3.memorykeeperclone",
     "name": "memorykeeperclone",
     "slug": "memorykeeperclone",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Cover.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anvarwouldnever3.memorykeeperclone",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.463744698419-rql4mcmph3pe9h7jmn1err4h7ui9lfg1"
+            ]
+          }
+        ]
+      }
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/Cover.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.anvarwouldnever3.memorykeeperclone",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAb7uO140_1GroPptUYX5d4rch8DkEA6XI"
+        }
+      },
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c712c843-11ee-4ed0-8247-71b62608aca9"
+      }
     }
   }
 }
